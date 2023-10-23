@@ -33,7 +33,7 @@ function showAmounts(service) {
 
 function calculateTip() {
   let serviceLength = serviceElement.options.selectedIndex;
-  let service = serviceElement.options[serviceLength].innerText;
+  let service = serviceElement.options[serviceLength].value;
   if (service === servicePerformance[0]) {
     showAmounts(service);
   } else if (service === servicePerformance[1]) {
